@@ -1,0 +1,50 @@
+extends base.pug
+
+
+
+block scripts
+  script(src='/static/index.js')
+
+
+block style
+    style
+      include ../static/style.css
+
+block content
+     
+    section#introSection
+        div Welcome To Happy Dance Academy
+        div.small Eat Sleep Dance Repeat
+    section#missionSection
+        h2 Our mission
+        div.card
+          h3 Dance Perfection
+          div.card-box
+            div.card-img 
+              img(src="../static/img/logo3.png")
+            
+            div.content 
+              p This is the best dance acadmey
+        div.card
+          h3 Dance The Way You Like
+          div.card-box
+            div.card-img 
+              img(src="../static/img/logo4.png")
+            
+            div.content 
+              p This is the best dance acadmey
+        div.card
+          h3 Expert Teaching
+          div.card-box
+            div.card-img 
+              img(src="../static/img/logo5.png")
+            
+            div.content 
+              p This is the best dance acadmey
+    section#sponsorsSection
+        h2 Our Sponsors
+        div#sponsors 
+          img(src="/static/img/apple-brands.svg", alt="Sponsor Image" Class="spImage")
+          img(src="/static/img/icons8-hp-50.png", alt="Sponsor Image" Class="spImage")
+          img(src="/static/img/microsoft-brands.svg", alt="Sponsor Image" Class="spImage")
+          img(src="/static/img/skype-brands.svg", alt="Sponsor Image" Class="spImage")     
